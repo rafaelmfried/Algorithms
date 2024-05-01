@@ -1,4 +1,4 @@
-# Linear Search Algorithm
+# Linear Search Algorithm 
 
 class LinearSearch
     def initialize(array)
