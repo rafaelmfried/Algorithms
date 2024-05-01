@@ -1,3 +1,5 @@
+# Binary Search
+
 class BinarySearch
     def initialize(array)
         @array = array.sort
