@@ -1,12 +1,13 @@
-# Maximaze Array Sum
+# Maximaze Array Sum after K Negations
 
 class MaximumSum
     def self.maximum_sum(array, k)
+        # The ! is to modify the array without need to use other variable.
         array.sort!
 
         index = 0
 
-        while k > 0 && index < array.length && array[index] > 0
+        while k > 0 && index < array.length && array[index] < 0
             array[index] = -array[index]
             k -= 1
             index += 1
