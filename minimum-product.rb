@@ -46,9 +46,13 @@ zeros_array = [0, 0, 0]
 positive_array = [1, 2, 3, 4]
 # Output: 1
 
+test_array = [-1, -1, -2, 4, 3]
+#Output: -24
+
 puts "Odd negative number and no zeros: #{MinimumProduct.minimum_product(odd_negative_array)}\n"
 puts "Even negative number and no zeros: #{MinimumProduct.minimum_product(even_negative_array)}\n"
 puts "Zero and Odd negative numbers: #{MinimumProduct.minimum_product(zero_and_odd_negative_array)}\n"
 puts "Zeros and Even negative numbers: #{MinimumProduct.minimum_product(zero_and_even_negative_array)}\n"
 puts "Zeros only: #{MinimumProduct.minimum_product(zeros_array)}\n"
 puts "Positive only: #{MinimumProduct.minimum_product(positive_array)}\n"
+puts "Test array: #{MinimumProduct.minimum_product(test_array)}\n"
