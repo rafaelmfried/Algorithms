@@ -1,7 +1,7 @@
-# Bubble Sort class implementation
+# Bubble Sort
 
 class BubbleSort
-    def sort(array)
+    def self.sort(array)
         # The variable window is used to compare the index and the next index
         (0...array.length - 1).each do |window|
             swapped = false
@@ -18,9 +18,7 @@ class BubbleSort
     end
 end
 
-sorter = BubbleSort.new()
-
 array = [8, 12, 5, 17, 3, 20, 9, 14, 6, 1, 19, 4, 11, 2, 16, 10, 7, 18, 15, 13]
 short_array = [5, 4, 3, 2, 1]
 
-sorter.sort(array)
+BubbleSort.sort(array)
