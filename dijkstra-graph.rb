@@ -53,7 +53,7 @@ class Graph
 
     path.unshift(start_node)
 
-    return distances[end_node], path
+    return start_node, end_node, distances[end_node], path
   end
 end
 
@@ -68,6 +68,10 @@ graph.add_node('G', {'C' => 10, 'D' => 3, 'I' => 4})
 graph.add_node('H', {'E' => 12, 'I' => 6})
 graph.add_node('I', {'G' => 4, 'H' => 6})
 
-distance, path = graph.shortest_path('A', 'I')
-puts "Distância mais curta de A para I: #{distance}"
-puts "Caminho mais curto de A para I: #{path.join(' -> ')}"
+start_node, end_node, distance, path = graph.shortest_path('A', 'C')
+
+puts <<~END
+  Distância mais curta de #{start_node} para #{end_node}: #{distance}
+  Caminho mais curto de #{start_node} para #{end_node}: #{path.join(' -> ')}
+END
+  
